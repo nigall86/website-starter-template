@@ -6,8 +6,16 @@ $font-sizes: (
   600: 1.5rem,
   500: 1.3125rem,
   400: 1.125rem,
-  300: 1rem,
 );
 
+//font weight
 $fw-400: 400;
 $fw-700: 700;
+
+.fw-regular {
+  font-weight: $fw-400;
+}
+
+.fw-bold {
+  font-weight: $fw-700;
+}
