@@ -20,6 +20,15 @@
   }
 }
 
+// function for line heights
+@function lh($lh-size) {
+  @if map.has-key($line-heights, $lh-size) {
+    @return map.get($line-heights, $lh-size);
+  } @else {
+    @error '$lh-size does not have that value!';
+  }
+}
+
 // function for spaces
 @function size($size) {
   @if map.has-key($sizes, $size) {

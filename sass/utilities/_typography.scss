@@ -1,0 +1,54 @@
+@use "../abstracts" as *;
+
+// generating font sizes classes
+@each $size-name, $size-value in $font-sizes {
+  .fs-#{$size-name} {
+    font-size: $size-value;
+  }
+}
+
+// generating line heights classes
+@each $lh-size, $lh-value in $line-heights {
+  .lh-#{$lh-size} {
+    line-height: $lh-value;
+  }
+}
+
+.ff-accent {
+  font-family: $ff-serif;
+}
+
+.ff-base {
+  font-family: $ff-sans;
+}
+
+// centering the text
+.text-center {
+  text-align: center;
+}
+
+// all caps
+.uppercase {
+  text-transform: uppercase;
+}
+
+// headings and subheadings
+.heading-primary {
+  font-family: $ff-accent;
+  font-size: fs(900);
+  line-height: lh(110);
+}
+
+.subheading-primary {
+  font-family: $ff-base;
+  font-size: fs(600);
+  line-height: lh(120);
+  text-transform: uppercase;
+}
+
+.heading-secondary {
+  font-size: fs(500);
+  font-weight: $fw-700;
+  line-height: lh(120);
+  text-transform: uppercase;
+}

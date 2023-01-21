@@ -1,8 +1,26 @@
+// 1rem = 10px
 $sizes: (
-  8: 0.5rem,
-  12: 0.75rem,
-  16: 1rem,
-  20: 1.25rem,
-  32: 2rem,
-  36: 2.25rem,
+  8: 0.8rem,
+  12: 1.2rem,
+  16: 1.6rem,
+  20: 2rem,
+  24: 2.4rem,
+  32: 3.2rem,
+  36: 3.6rem,
+  40: 4rem,
+  48: 4.8rem,
 );
+
+// sections padding
+$hero-padding: clamp(25.6rem, 15vh, 32rem);
+$section-padding: clamp(4.8rem, 10vh, 11.2rem);
+
+$card-body-padding: clamp(3.2rem, 2.5vw, 8rem);
+
+// gap in flex and grids
+$grid-gap: 1.6rem;
+$flex-group-gap: 1.6rem;
+
+$container-inline-padding: 3.2rem; //32px
+$container-max-width: 112rem; //1120px
+$container-max-width-wide: 160rem;
