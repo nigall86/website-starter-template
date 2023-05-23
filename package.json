@@ -9,9 +9,9 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "postcss-preset-env": "^7.8.3",
-    "sass": "^1.57.1",
-    "vite": "^4.0.4",
+    "postcss-preset-env": "^8.4.1",
+    "sass": "^1.62.1",
+    "vite": "^4.3.8",
     "vite-plugin-purgecss": "^0.2.12"
   }
 }

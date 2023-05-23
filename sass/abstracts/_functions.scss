@@ -1,8 +1,9 @@
-@use "sass:map";
-@use "colors" as *;
-@use "typography" as *;
-@use "sizes" as *;
+@use 'sass:map';
+@use 'colors' as *;
+@use 'typography' as *;
+@use 'sizes' as *;
 
+// Returns color and shade from abstracts/_colors
 @function clr($color, $shade) {
   @if map.has-key($colors, $color, $shade) {
     @return map.get($colors, $color, $shade);
@@ -11,7 +12,7 @@
   }
 }
 
-// function for font sizes
+// Returns font-size from abstracts/_typography
 @function fs($font-size) {
   @if map.has-key($font-sizes, $font-size) {
     @return map.get($font-sizes, $font-size);
@@ -20,7 +21,7 @@
   }
 }
 
-// function for line heights
+// Returns line-height from abstracts/_typography
 @function lh($lh-size) {
   @if map.has-key($line-heights, $lh-size) {
     @return map.get($line-heights, $lh-size);
@@ -29,7 +30,7 @@
   }
 }
 
-// function for spaces
+// Returns size from abstracts/_sizes
 @function size($size) {
   @if map.has-key($sizes, $size) {
     @return map.get($sizes, $size);
